@@ -206,13 +206,15 @@ button:hover {
     transform: translatey(-70px);
 }
 
-.section {
-    margin-top: 50px ;
-}
+
 .section p {
     color: #bcf7ff;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     
+}
+
+.section p:nth-child(2) {
+    padding-bottom: 220px;
 }
 
 .section i {
@@ -229,11 +231,12 @@ button:hover {
     width: 100%;
     align-items: center;
     color: #fff;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .pee {
     color: #bcf7ff;
+    padding-top: 13px;
 }
 
 
@@ -373,6 +376,26 @@ footer i {
     cursor: pointer;
 }
 
+#appear_image_div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    opacity: 0.7;
+    background-color: black;
+}
+
+#appear_image {
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 11;
+}
+
+
+
+
+
 
 
 @media only screen and (max-width: 1200px) {
@@ -488,7 +511,7 @@ footer i {
     }
 
     section img {
-        width: 100%;
+        width: 70%;
         height: auto;
         margin-top: 40px;
     }
@@ -503,7 +526,7 @@ footer i {
     }
 
     #section_two img {
-        width: 100%;
+        width: 70%;
     }
 
     .section-cont h1{
@@ -523,7 +546,7 @@ footer i {
     }
 
     .section_three img {
-        width: 100%;
+        width: 70%;
     }
 
     .section_five {
@@ -534,7 +557,7 @@ footer i {
     }
 
     .section_five img {
-        width: 90%;
+        width: 70%;
         margin-top: 50px;
     }
 
@@ -544,9 +567,12 @@ footer i {
         
     }
     .section_six img, .section_seven img {
-        width: 75%;
+        width: 70%;
     }
 
+    .section_seven img {
+        width: 70%;
+    }
 }
 
 @media only screen and (max-width: 760px) {
@@ -606,4 +632,22 @@ footer i {
     #sub {
         margin-top:40px;
     }
+
+    .p {
+        font-size: 10px;
+        word-wrap: none;
+    }
+
+    .section_two img, header img, .section_three img, .section_five img, .section_six img, .section_seven img {
+        width: 70%;
+    }
+
+    .section_seven h1:nth-child(3) {
+        padding-top: 10px;
+    }
+
+    .signup h1:nth-child(4) {
+        padding-top: 10px;
+    }
+
 }
