@@ -2,7 +2,8 @@
 
 <html lang='en'>
     {% load static %}
-    {% load crispy_forms_tags %}
+    
+    
     
     <head>
 
@@ -173,7 +174,7 @@
     <div class="section_six">
         
         
-            <img src="{% static '/images/ultron-empire.jpg' %}" alt="" class="width" id="pop5" >
+            <img src="{% static 'images/section 6 img.png' %}" alt="" class="width" id="pop5" >
         
 
         <div>
@@ -207,14 +208,15 @@
             <h1 class="gradient">Be cool, Sign up for the newsletter.</h1>
         </div>
 
-        <form action="#" method="POST" class="forms">
-            {% csrf_token%}
+        <form action="/home/" method="POST" class="forms form">
+            {% csrf_token %}
+          
             <label for="fullname">Full Name</label>
-            <input type="text" placeholder="e.g. Homer Simpson" id="fullname">
+            <input type="text" placeholder="e.g. Homer Simpson" id="fullname" name='full_name'>
 
             <label for="email">Email</label>
-            <input type="email" placeholder="e.g. name@example.com" id="email">
-            <button id="sub" class="sub">Subscribe</button>
+            <input type="email" placeholder="e.g. name@example.com" id="email" name='email_address'>
+            <button id="sub" type="submit" class="sub">Subscribe</button>
         </form>
 
     </div>
@@ -228,6 +230,7 @@
             <a href="#"><i class='fa fa-instagram'> </i></a>
             <a href="#"><i class='fa fa-twitter'> </i></a>
         </div>
+      
     </footer>
 
 
