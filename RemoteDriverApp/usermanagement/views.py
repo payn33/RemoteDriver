@@ -6,30 +6,29 @@ from django.middleware import csrf
 
 # Create your views here.
 
-def landingpage(request):
-    return render(request, "index.html")
-
 def userData(request):
     if request.method == 'POST':
-        form.UserData(request.POST)
+        full_name = request.POST.get('name')
+        email_address = request.POST.get('email')
+        data = Email()
+        data = Email()
+        data.full_name = full_name
+        data.email_address = email_address
+        data.save()
+        
+        # form = userData(request.POST)
+        # if form.is_valid():
+        #     form.save()
+        full_name = request.POST.get('name')
+        email_address = request.POST.get('email')
+        print(full_name,email_address)
+        #     email_obj = Email(full_name = full_name, email_address = email_address)
+        #     email_obj.save()
 
-        form = userData(request.POST)
-        if form.is_valid():
-            full_name = request.POST.get('full_name', '')
-            email_address = request.POST.get('email_address', '')
-            email_obj = Email(full_name = full_name, email_address = email_address)
-            print(full_name)
-            print(email_obj)
-            email_obj.save()
-            form.save()
-            return form
+        # else:
+        #     form = userData()
 
-        else:
-            form = userData()
-
-        return render(request, 'index.html', {
-            'form': form
-        })
+    return render(request, 'index.html')
 
 
 def get_or_create_csrf_token(request):

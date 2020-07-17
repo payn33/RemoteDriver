@@ -208,15 +208,14 @@
             <h1 class="gradient">Be cool, Sign up for the newsletter.</h1>
         </div>
 
-        <form action="/home/" method="POST" class="forms form">
+        <form  method="post" class="forms" enctype="multipart/form-data">
             {% csrf_token %}
-          
             <label for="fullname">Full Name</label>
-            <input type="text" placeholder="e.g. Homer Simpson" id="fullname" name='full_name'>
+            <input type="text" placeholder="e.g. Homer Simpson" id="fullname" name = "name">
 
             <label for="email">Email</label>
-            <input type="email" placeholder="e.g. name@example.com" id="email" name='email_address'>
-            <button id="sub" type="submit" class="sub">Subscribe</button>
+            <input type="email" placeholder="e.g. name@example.com" id="email" name="email">
+            <button id="sub" class="sub" name="submit">Subscribe</button>
         </form>
 
     </div>
