@@ -7,7 +7,7 @@
 
 
 header {
-    background-image: url(images/section\ 1\ background.png);
+    background-image: url('/static/images/section 1 background.png');
     width: 100%;
     height:auto;
     background-size: cover;
@@ -72,7 +72,7 @@ button {
     justify-content: space-evenly;
     overflow: hidden;
     align-items: center;
-    background-image: url(/images/section\ 2.png);
+    background-image: url("/static/images/section 2.png");
     background-size: cover;
     color: white;
     background-repeat: no-repeat;
@@ -126,7 +126,7 @@ button:hover {
 .section_three {
     display: flex;
     flex-direction: row-reverse;
-    background-image: url(/images/section\ 3.png);
+    background-image: url("/static/images/section\ 3.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -148,10 +148,6 @@ button:hover {
 
 .section_three h1 {
     color: #182fac;
-}
-.s3a{
-    
-   
 }
 
 .s3a p:nth-child(1) {
@@ -191,7 +187,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-image: url(/images/section\ 5.png);
+    background-image: url("/static/images/section\ 5.png");
     width: 100%;
     height:auto;
     background-size: cover;
@@ -271,7 +267,7 @@ button:hover {
 }
 
 .section_seven {
-    background-image: url(/images/section\ 7.png);
+    background-image: url("/static/images/section 7.png");
     width: 100%;
     height:auto;
     background-size: cover;
