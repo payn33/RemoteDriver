@@ -372,23 +372,25 @@ footer i {
     cursor: pointer;
 }
 
-#appear_image_div {
+
+.popup{
+    background-image: url('');
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
     height: 100%;
-    position: absolute;
+    position: fixed;
+    top: 0;
     z-index: 10;
-    opacity: 0.7;
-    background-color: black;
+    left: 0;
+    cursor: pointer;
+    display: none;
+    object-fit: contain;
 }
 
-#appear_image {
+
+.popup.wide{
     display: block;
-    margin: auto;
-    position: relative;
-    z-index: 11;
 }
-
-
 
 
 

@@ -155,4 +155,69 @@ gsap.from('form button', 1, {
 });
 
 
+$(document).ready(function(){
+    $('#pop1').on('click', function() {
+        $('#popup1').toggleClass('wide')
+    })
+})
+$(document).ready(function(){
+    $('#popup1').on('click', function() {
+        $(this).removeClass('wide')
+    })
+})
 
+
+$(document).ready(function(){
+    $('#pop2').on('click', function() {
+        $('#popup2').toggleClass('wide')
+    })
+})
+$(document).ready(function(){
+    $('#popup2').on('click', function() {
+        $(this).removeClass('wide')
+    })
+})
+
+$(document).ready(function(){
+    $('#pop3').on('click', function() {
+        $('#popup3').toggleClass('wide')
+    })
+})
+$(document).ready(function(){
+    $('#popup3').on('click', function() {
+        $(this).removeClass('wide')
+    })
+})
+
+$(document).ready(function(){
+    $('#pop4').on('click', function() {
+        $('#popup4').toggleClass('wide')
+    })
+})
+$(document).ready(function(){
+    $('#popup4').on('click', function() {
+        $(this).removeClass('wide')
+    })
+})
+
+$(document).ready(function(){
+    $('#pop5').on('click', function() {
+        $('#popup5').toggleClass('wide')
+    })
+})
+$(document).ready(function(){
+    $('#popup5').on('click', function() {
+        $(this).removeClass('wide')
+    })
+})
+
+$(document).ready(function(){
+    $('#pop6').on('click', function() {
+        $('#popup6').toggleClass('wide')
+    })
+})
+$(document).ready(function(){
+    $('#popup6').on('click', function() {
+        $(this).removeClass('wide')
+    })
+})
