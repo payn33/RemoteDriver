@@ -224,27 +224,27 @@ $(document).ready(function () {
 
 // Form validation
 
-function checkForm(e) {
-  const name = document.getElementById("fullname");
-  const email = document.getElementById("email");
-  const sub = document.getElementById("sub");
+// function checkForm(e) {
+//   const name = document.getElementById("fullname");
+//   const email = document.getElementById("email");
+//   const sub = document.getElementById("sub");
 
-  if (name.value.length <= 0) {
-    alert("name cannot be blank");
-  }
-  if (email.value.length <= 0) {
-    alert("email cannot be blank");
-  } else if (validEmail(email.value.length)) {
-    alert("Enter a valid email");
-  } else if (name.value.length >= 0 || validEmail()) {
-    alert("thank you for subscribing");
-  }
-  e.preventDefault();
-}
-function validEmail(mail) {
-  var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(mail);
-}
+//   if (name.value.length <= 0) {
+//     alert("name cannot be blank");
+//   }
+//   if (email.value.length <= 0) {
+//     alert("email cannot be blank");
+//   } else if (validEmail(email.value.length)) {
+//     alert("Enter a valid email");
+//   } else if (name.value.length >= 0 || validEmail()) {
+//     alert("thank you for subscribing");
+//   }
+//   e.preventDefault();
+// }
+// function validEmail(mail) {
+//   var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//   return re.test(mail);
+// }
 
 //preloader
 
